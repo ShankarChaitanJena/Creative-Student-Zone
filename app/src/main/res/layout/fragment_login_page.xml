@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.creativetechnocollege.com.crtv.creativetechnocollege.Login_page"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/todo"
+        android:gravity="center"
+        android:padding="10dp"
+        android:src="@drawable/creat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/boarder1"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="40dp"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textColor="#0091EA"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/userid"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="20dp"
+                android:hint="@string/username"
+                android:inputType="textCapCharacters"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/userpwd"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:autofillHints="*******"
+                android:paddingLeft="20dp"
+                android:hint="@string/password"
+                android:inputType="numberPassword"
+                android:maxLines="1" />
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#0091EA"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

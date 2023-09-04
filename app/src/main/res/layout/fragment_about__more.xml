@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.creativetechnocollege.com.crtv.creativetechnocollege.About_More">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:ignore="ScrollViewCount,UselessParent,SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get to know us"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="26dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/baseline_panorama_vertical_select_24"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/appcolor5"
+                android:layout_margin="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/banner2"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="26dp"
+                    android:padding="16dp"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/collegethum"
+                android:layout_marginTop="16dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/creative_line2"
+                android:textSize="17dp"
+                android:justificationMode="inter_word"
+                android:layout_margin="16dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/creative_line3"
+                android:textSize="17dp"
+                android:justificationMode="inter_word"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="16dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="240dp"
+                    android:layout_height="80dp"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="20dp"
+                    app:cardBackgroundColor="@color/appcolor5"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="left">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3000+"
+                            android:textColor="@color/black"
+                            android:textSize="32dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Students Enrolled"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="240dp"
+                    android:layout_height="80dp"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="20dp"
+                    app:cardBackgroundColor="@color/appcolor5"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="right">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="400+"
+                            android:textColor="@color/black"
+                            android:textSize="32dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Placements"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="240dp"
+                    android:layout_height="80dp"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="20dp"
+                    app:cardBackgroundColor="@color/appcolor5"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="left">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15+"
+                            android:textColor="@color/black"
+                            android:textSize="32dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pre placements programs"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="240dp"
+                    android:layout_height="80dp"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="20dp"
+                    app:cardBackgroundColor="@color/appcolor5"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="right">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20+"
+                            android:textColor="@color/black"
+                            android:textSize="32dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MNC Hired"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Social Media"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="32dp"
+                android:drawableLeft="@drawable/baseline_panorama_vertical_select_24"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:layout_weight="5">
+
+                <ImageView
+                    android:id="@+id/insta"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/instagram1"
+                    android:layout_margin="16dp"/>
+
+                <ImageView
+                    android:id="@+id/fb"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/facebook1"
+                    android:layout_margin="16dp"/>
+
+                <ImageView
+                    android:id="@+id/link"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/linkedin1"
+                    android:layout_margin="16dp"/>
+
+                <ImageView
+                    android:id="@+id/web"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/website1"
+                    android:layout_margin="16dp"/>
+
+                <ImageView
+                    android:id="@+id/yt"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/youtube1"
+                    android:layout_margin="16dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

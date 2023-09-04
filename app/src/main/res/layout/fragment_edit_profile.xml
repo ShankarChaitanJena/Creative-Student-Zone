@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.creativetechnocollege.com.crtv.creativetechnocollege.EditProfile">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/top_background_editprofile"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="250dp"
+            android:src="@drawable/creat"/>
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/edit_profile_picture"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@drawable/circle_profile"
+        android:padding="4dp"
+        android:src="@drawable/profileavtar"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp" />
+
+    <LinearLayout
+        android:layout_below="@id/edit_profile_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Email"
+            android:textSize="15dp"
+            android:paddingLeft="20dp"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/update_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:textSize="16dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Phone"
+            android:textSize="15dp"
+            android:paddingLeft="20dp"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/update_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textSize="16dp"
+            android:paddingLeft="20dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Address"
+            android:textSize="15dp"
+            android:paddingLeft="20dp"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/update_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:textSize="16dp"
+            android:paddingLeft="20dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+        <Button
+            android:id="@+id/save_profile"
+            style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:text="Save"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:layout_margin="30dp"
+            app:strokeColor="@color/lightgray"
+            app:strokeWidth="1dp"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

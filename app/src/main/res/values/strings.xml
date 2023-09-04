@@ -1,0 +1,284 @@
+<resources>
+    <string name="app_name">Creative Student Zone</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">College ID</string>
+    <string name="forget_your_password">Forget your password</string>
+    <string name="todo">TODO</string>
+    <string name="full_name">Full Name.</string>
+    <string name="roll_no_id_no">Roll No./ ID No.</string>
+    <string name="choice_your_course">Choice your course : </string>
+    <string name="college_joining_year">College joining Year</string>
+    <string name="select">Select</string>
+    <string name="bba">BBA</string>
+    <string name="bca">BCA</string>
+    <string name="bsc_cs">BSc. CS</string>
+    <string name="your_joining_year">Your joining year : </string>
+    <string name="roll_no_college_id">Roll No. / College ID :</string>
+    <string name="name">Full Name :</string>
+
+    <string name="director"><b>\"You can get everything in life you want if you will just help enough other people get what they want.\"</b></string>
+    <string name="banner"><b>\" Building Career\n\nChanging Lives !!! \"</b></string>
+
+
+    //contact us strings...............................................
+    <string name="mob">Mobile :- 7894391500</string>
+    <string name="email">Email :- angul.creative@gmail.com</string>
+    <string name="address">Address :- Tamrit Colony, Angul</string>
+
+    <string name="principal_name">Mr. Krishnasish\nMishra </string>
+    <string name="dept_1"> PRINCIPAL </string>
+
+    <string name="vice_name">Mr. Bhabani\nSankar\nSahoo </string>
+    <string name="dept_2"> VICE PRINCIPAL, \nPLACEMENT TRAINER </string>
+
+    <string name="babin_name">Mr. Babin\nChandra\nGarnaik </string>
+    <string name="dept_3"> ADMINISTRATION </string>
+
+    <string name="ratan_name">Mr. Ratan\nKumar Behera</string>
+    <string name="dept_4"> EXAMINATION </string>
+
+    <string name="dev_name">Ms. Devjani\nPuhan </string>
+    <string name="dept_5"> PLACEMENT TRAINER </string>
+
+    <string name="ankul_name">Mr. Anukul\nDeep Saraf</string>
+    <string name="dept_6"> CO-CURRICULAR ACTIVITIES\nINTERNSHIP </string>
+
+    <string name="subhra_name">Mr. Subhrajyoti\nBehera </string>
+    <string name="dept_7"> LIBRARY </string>
+
+    <string name="ana_name">Ms. Annapurna\nNath </string>
+    <string name="dept_8"> FEE PAYMENT </string>
+
+    <string name="sarat_name">Mr. Sarat\nChandra\nSahu </string>
+    <string name="dept_9"> CAMPUS CANTEEN </string>
+
+    <string name="subha_name"> Ms. Subhashree\nSahu </string>
+    <string name="dept_10"> GIRLS HOSTEL</string>
+
+    <string name="satya_name"> Mr. Satya\nS.S. Dehury</string>
+    <string name="dept_11"> SPORTS</string>
+
+    <string name="todo_creative">creativeTodo</string>
+
+
+    <string name="_1">1.</string>
+    <string name="_2">2.</string>
+    <string name="_3_t">3.\t</string>
+    <string name="_4_t">4.\t</string>
+    <string name="_5_t">5.\t</string>
+    <string name="_6_t">6.\t</string>
+    <string name="_7_t">7.\t</string>
+    <string name="_8_t">8.\t</string>
+    <string name="_9_t">9.\t</string>
+    <string name="_10_t">10.\t</string>
+    <string name="semester">Semester</string>
+    <string name="_6th">6th</string>
+    <string name="_5th">5th</string>
+    <string name="_3rd_year">3rd Year</string>
+    <string name="_4th">4th</string>
+    <string name="_2nd_year">2nd Year</string>
+    <string name="_2nd">2nd</string>
+    <string name="_1st">1st</string>
+    <string name="_1st_year">1st Year</string>
+    <string name="choose">Choose</string>
+
+
+    <string name="personname">Person Name</string>
+    <string name="personemail">personname@gmail.com</string>
+
+    <string name="id">Roll No./ID : </string>
+    <string name="id_value">03BXXXXXX</string>
+
+    <string name="course">Course : </string>
+    <string name="course_values">Course</string>
+
+    <string name="join_year">Join Year : </string>
+    <string name="year_value">2021</string>
+
+    <string name="phone_no.">Phone No. : </string>
+    <string name="Phone_no._value">+91 9988766500</string>
+
+    <string name="email_id">Email Id : </string>
+    <string name="email_id_value">username@gmail.com</string>
+
+    <string name="Current_address">Current\nAddress : </string>
+    <string name="Current_address_value">Angul</string>
+
+    <string name="_1_subject_covered_as_prescribed_syllabus">1. Subject covered as prescribed syllabus :</string>
+    <string name="_2_the_teacher_covered_relevant_topics_beyond_the_syllabus">2. Teacher covered relevant topics beyond the syllabus </string>
+    <string name="_3_the_problem_solving_skill_of_the_teacher">3. The problem-solving skill of the teacher :</string>
+    <string name="_4_assignments_notes_checked_by_the_faculty">4. Assignments / Notes checked by the faculty :</string>
+    <string name="_5_punctuality_in_taking_the_class">5. Punctuality in taking the class :</string>
+    <string name="_6_how_would_you_rate_your_faculty_s_teaching_style">6.How would you rate your faculty\'s teaching style :</string>
+    <string name="_7_effectiveness_of_teacher_in_terms_of_respective_content_technical_non_technical">7. Effectiveness of teacher in terms of respective content (technical/non-technical) :</string>
+    <string name="_8_effectiveness_of_teacher_in_terms_of_communication_skills">8. Effectiveness of teacher in terms of communication skills :</string>
+    <string name="_9_use_of_projectors_in_the_class">9. Use of projectors in the class :</string>
+    <string name="_10_availability_beyond_normal_classes_and_cooperation_to_solve_individual_problems">10. Availability beyond normal classes and cooperation to solve individual problems :</string>
+    <string name="submit">SUBMIT</string>
+
+
+    <string-array name="NUMBERS">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="SEMESTER">
+        <item>FIRST SEMESTER</item>
+        <item>SECOND SEMESTER</item>
+        <item>THIRD SEMESTER</item>
+        <item>FOURTH SEMESTER</item>
+        <item>FIFTH SEMESTER</item>
+        <item>SIXTH SEMESTER</item>
+    </string-array>
+
+
+    <string-array name="BSC1">
+        <item>PROGRAMMING USING C</item>
+        <item>DIGITAL LOGIC</item>
+        <item>MATHEMATICS</item>
+        <item>ENVIRONMENTAL SCIENCE</item>
+    </string-array>
+    <string-array name="BSC2">
+        <item>PROGRAMMING USING C++</item>
+        <item>DATA STRUCTURE</item>
+        <item>PHYSICS</item>
+        <item>ENGLISH</item>
+    </string-array>
+    <string-array name="BSC3">
+        <item>JAVA PROGRAMMING</item>
+        <item>DATABASE SYSTEM</item>
+        <item>DISCRETE MATHEMATICAL STRUCTURE</item>
+        <item>PYTHON PROGRAMMING</item>
+        <item>ALGEBRA</item>
+    </string-array>
+    <string-array name="BSC4">
+        <item>OPERATING SYSTEM</item>
+        <item>COMPUTER NETWORK</item>
+        <item>COMPUTER GRAPHICS</item>
+        <item>ANDROID PROGRAMMING</item>
+        <item>PHYSICS 2</item>
+
+    </string-array>
+    <string-array name="BSC5">
+        <item>WEB TECHNOLOGIES</item>
+        <item>SOFTWARE ENGINEERING</item>
+        <item>NUMERICAL TECHNIQUES</item>
+        <item>UNIX SHELL PROGRAMMING</item>
+    </string-array>
+
+    <string-array name="BSC6">
+        <item>ARTIFICIAL INTELLIGENCE</item>
+        <item>ALGORITHM DESIGN TECHNIQUES</item>
+        <item>DATA SCIENCE</item>
+    </string-array>
+
+    <string-array name="BCA1">
+        <item>PROGRAMMING USING C</item>
+        <item>DIGITAL LOGIC</item>
+        <item>MANAGEMENT</item>
+        <item>ENVIRONMENTAL SCIENCE</item>
+    </string-array>
+
+    <string-array name="BCA2">
+        <item>PROGRAMMING USING C++</item>
+        <item>DATA STRUCTURE</item>
+        <item>COMMUNICATION ENGLISH</item>
+        <item>STATISTICS</item>
+    </string-array>
+    <string-array name="BCA3">
+        <item>COMPUTER ORGANIZATION</item>
+        <item>JAVA PROGRAMMING</item>
+        <item>DISCRETE MATHEMATICAL STRUCTURE</item>
+        <item>PYTHON PROGRAMMING</item>
+        <item>BUSINESS ACCOUNTING</item>
+    </string-array>
+
+    <string-array name="BCA4">
+        <item>OPERATING SYSTEM</item>
+        <item>COMPUTER NETWORK</item>
+        <item>DATABASE SYSTEM</item>
+        <item>ANDROID PROGRAMMING</item>
+        <item>BUSINESS ECONOMICS</item>
+    </string-array>
+    <string-array name="BCA5">
+        <item>WEB TECHNOLOGIES</item>
+        <item>SOFTWARE ENGINEERING</item>
+        <item>UNIX SHELL PROGRAMMING</item>
+        <item>DATA MINING</item>
+    </string-array>
+    <string-array name="BCA6">
+        <item>NUMERICAL TECHNIQUES</item>
+        <item>DATA SCIENCE</item>
+        <item>COMPUTER GRAPHICS</item>
+    </string-array>
+    <string-array name="BBA1">
+        <item>INTRODUCTION TO BUSINESS</item>
+        <item>ENGLISH LANGUAGE AND LITERATURE</item>
+        <item>QUANTITATIVE TECHNIQUES FOR MANAGEMENT</item>
+        <item>BASIC FINANCIAL ACCOUNTING</item>
+    </string-array>
+
+    <string-array name="BBA2">
+        <item>ECONOMICS</item>
+        <item>MANAGEMENT THEORY AND PRACTICAL</item>
+        <item>COST AND MANAGEMENT ACCOUNTING</item>
+        <item>COMPUTER FOR MANAGEMENT</item>
+    </string-array>
+    <string-array name="BBA3">
+        <item>PSYCHOLOGY FOR MANAGEMENT</item>
+        <item>BUSINESS ETHICS AND CORPORATE GOVERNANCE</item>
+        <item>INTRODUCTION TO BANKING AND INSURANCE</item>
+        <item>BUSINESS AND CORPORATE LAW</item>
+        <item>COMMUNICATIVE ENGLISH</item>
+    </string-array>
+
+    <string-array name="BBA4">
+        <item>FINANCIAL MANAGEMENT</item>
+        <item>MARKETING MANAGEMENT</item>
+        <item>HUMAN RESOURCE MANAGEMENT</item>
+        <item>PRODUCT AND OPERATION MANAGEMENT</item>
+        <item>ENVIRONMENTAL STUDIES</item>
+    </string-array>
+    <string-array name="BBA5">
+        <item>ORGANIZATIONAL BEHAVIOUR</item>
+        <item>FINANCIAL MARKETS AND INSTITUTIONS</item>
+        <item>ADVERTISEMENT AND SALES PROMOTION</item>
+        <item>MANAGEMENT INFORMATION SYSTEM AND DSS</item>
+        <item>INDIAN SOCIETY AND CULTURE</item>
+    </string-array>
+    <string-array name="BBA6">
+        <item>RESEARCH METHODOLOGY</item>
+        <item>ENTREPRENEURSHIP AND SMALL BUSINESS MANAGEMENT</item>
+        <item>E BUSINESS</item>
+        <item>ORGANIZATIONAL CHANGE AND DEVELOPMENT</item>
+        <item>DISSERTATION AND VIVA-VOCA</item>
+    </string-array>
+
+
+    <string name="city_office">Tamrit Colony, \nAngul, \nOdisha, \nPin-759122</string>
+    <string name="collegeadd">Saradhapur,     \nAngul, \nOdisha,\nPin-759040</string>
+
+
+    <string name="creative_line"><b>Creative Techno College</b>\n\"ଅନୁଗୋଳ ଜିଲ୍ଲାର ରାଜ୍ୟ ସରକାରଙ୍କର ପ୍ରଥମ ସ୍ଥାୟୀ ସ୍ଵୀକୃତି ପ୍ରାପ୍ତ ପ୍ରଫେସନାଲ ଡିଗ୍ରୀ କଲେଜ - <b>Affiliated to Utkal University, Odisha\"</b></string>
+
+    <string name="creative_line2">Creative techno college, angul is located at baluakata, sharadhapur, angul. It is recognised by govt. of Odisha, dept. of higher education and affilated to <b>Utkal university</b>. It is a pioneer college in central Odisha providing it and management education like <b>BCA, BBA and B.sc. computer science</b> under Utkal univerisity, vani vihar, Bhubaneswar.</string>
+
+    <string name="creative_line3">The college has a group of experienced faculties and supporting staffs. It has well equipped infrastructure and air conditioned <b>computer labs</b>. Besides course curriculum the college has laid emphasis to develop students “professional skill” through soft skill training like <b>spoken English, group discussion, debate, power point presentation, and quiz and mock interviews</b>. Soft skill training has been providing to coup with the need of the hour and to make them corporate ready. The college has a special placement cell and has proven record in providing placement assistance to successful students.</string>
+
+    <string name="director_name"><b>Mr. Gyanendra Ku. Sahoo\n\t\t\tDirector of CTC</b></string>
+    <string name="bhabani_sir_nameeee"><b>Mr. Bhabani Shankar Sahoo\n\t\t\tProject Manager</b></string>
+    <string name="banner2"><b>\" Building Career\n      Changing Lives !!! \"</b></string>
+
+
+</resources>

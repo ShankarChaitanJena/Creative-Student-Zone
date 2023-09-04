@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context="com.crtv.creativetechnocollege.Suggestion_Box">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="151dp"
+                android:src="@drawable/welcome"
+                android:contentDescription="@string/todo" />
+
+
+            <LinearLayout
+                android:id="@+id/imageView2"
+                android:layout_width="320dp"
+                android:layout_height="460dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="205dp"
+                android:background="@drawable/boarder1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:text="SUGGESTION.!!"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_500"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="College Id :- "
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="italic"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/suggestion_id"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="20dp"
+                        tools:ignore="TouchTargetSizeCheck,TextSizeCheck,SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tcourse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Course:-"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="italic"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/suggestion_course"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="20dp"
+                        tools:ignore="TouchTargetSizeCheck,TextSizeCheck,SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Name  :-"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="italic"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/suggestion_name"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="55dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:textSize="20dp"
+                        tools:ignore="TextSizeCheck" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Suggestion : "
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    tools:ignore="TextSizeCheck"
+                    android:layout_marginLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/suggestion_Message"
+                    android:layout_width="283dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/boarder11"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:outlineAmbientShadowColor="@color/black"
+                    android:padding="10dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/submit_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/purple_500"
+                    android:text="Submit"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </ScrollView>
+
+</FrameLayout>
