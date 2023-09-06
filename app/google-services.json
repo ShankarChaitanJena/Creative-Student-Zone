@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "29214805621",
+    "project_id": "creative-student-zone",
+    "storage_bucket": "creative-student-zone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29214805621:android:6337ae98f2681211beb23c",
+        "android_client_info": {
+          "package_name": "com.crtv.creativetechnocollege"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29214805621-3h9h0e9jpu49lgli70shl88s1ff11fns.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtqj4OmXH8WiqqlnHx5XQui59KNA-B9Hs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29214805621-3h9h0e9jpu49lgli70shl88s1ff11fns.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
