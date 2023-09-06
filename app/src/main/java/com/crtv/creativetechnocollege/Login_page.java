@@ -31,9 +31,11 @@ public class Login_page extends Fragment {
     ProgressDialog progressDialog;
     EditText editText1, editText2;
     Button button;
+    SharedPreferences sharedPreferences;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_login_page, container, false);
 
@@ -42,7 +44,7 @@ public class Login_page extends Fragment {
         editText2 = view.findViewById(R.id.userpwd);
         button = view.findViewById(R.id.ok);
 
-        final SharedPreferences sharedPreferences = getActivity().getSharedPreferences("Data", Context.MODE_PRIVATE);
+        sharedPreferences = getActivity().getSharedPreferences("Data", Context.MODE_PRIVATE);
         final String type = sharedPreferences.getString("ID", "");
         final String type1 = sharedPreferences.getString("Password", "");
 
@@ -72,10 +74,7 @@ public class Login_page extends Fragment {
                     e.printStackTrace();
                 }
 
-                SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putString("ID", userId);
-                editor.putString("Password", userPwd);
-                editor.apply();
+
             }
         });
 
@@ -96,6 +95,10 @@ public class Login_page extends Fragment {
                     @Override
                     public void onResponse(String response) {
                         if (response.equalsIgnoreCase("found")) {
+                            SharedPreferences.Editor editor = sharedPreferences.edit();
+                            editor.putString("ID", userId);
+                            editor.putString("Password", userPwd);
+                            editor.apply();
                             progressDialog.dismiss();
                             Toast.makeText(getActivity(), "LOGIN SUCCESS", Toast.LENGTH_SHORT).show();
                             FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
@@ -103,6 +106,7 @@ public class Login_page extends Fragment {
                             fragmentTransaction.commit();
                         } else if (response.equalsIgnoreCase("not found")) {
                             Toast.makeText(getActivity(), "LOGIN FAILED", Toast.LENGTH_SHORT).show();
+                            progressDialog.dismiss();
                         }
                     }
                 }, new Response.ErrorListener() {
