@@ -2,8 +2,10 @@ package com.crtv.creativetechnocollege;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -14,6 +16,7 @@ import android.widget.LinearLayout;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.creativetechnocollege.R;
 
@@ -37,35 +40,39 @@ public class BBA_sem1_material extends Fragment {
         sub1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showDialog(getActivity(),Demoppt.class, Demonotes.class, DemoAssignment.class, "Introduction to bussiness");
+                String QBank = "https://drive.google.com/drive/folders/1jn8t2YM5o_Gvu83m6WSsotdlwnUdl6R4?usp=sharing";
+                showDialog(getActivity(),Demoppt.class, Demonotes.class, DemoAssignment.class, "Introduction to bussiness", QBank);
             }
         });
 
         sub2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showDialog(getActivity(),Demoppt.class, Demonotes.class, DemoAssignment.class, "English Language And Litreture");
+                String QBank = "https://drive.google.com/drive/folders/1gXRu8l5IiHKUJ1jRXDgD8YkRArBIEQP4?usp=sharing";
+                showDialog(getActivity(),Demoppt.class, Demonotes.class, DemoAssignment.class, "English Language And Litreture", QBank);
             }
         });
 
         sub3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showDialog(getActivity(),Demoppt.class, Demonotes.class, DemoAssignment.class, "Basics Of Financial Accounting");
+                String QBank = "https://drive.google.com/drive/folders/1Ah-8FekmgyX3XB-3qCls1-Fnu1M5ACpr?usp=sharing";
+                showDialog(getActivity(),Demoppt.class, Demonotes.class, DemoAssignment.class, "Basics Of Financial Accounting", QBank);
             }
         });
 
         sub4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showDialog(getActivity(),Demoppt.class, Demonotes.class, DemoAssignment.class, "Quantitative Technique For Management");
+                String QBank = "https://drive.google.com/drive/folders/14eO4cblyIR2a4gmpQoacj088WiZXw3lt?usp=sharing";
+                showDialog(getActivity(),Demoppt.class, Demonotes.class, DemoAssignment.class, "Quantitative Technique For Management", QBank);
             }
         });
 
         return view;
     }
 
-    private void showDialog(Activity activity, Class next, Class next2, Class next3, String bookdata) {
+    private void showDialog(Activity activity, Class next, Class next2, Class next3, String bookdata, String QBank) {
 
         final Dialog dialog = new Dialog(activity);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -74,6 +81,8 @@ public class BBA_sem1_material extends Fragment {
         LinearLayout ppt = dialog.findViewById(R.id.ppt);
         LinearLayout note = dialog.findViewById(R.id.notes);
         LinearLayout assignment = dialog.findViewById(R.id.assign);
+        LinearLayout question = dialog.findViewById(R.id.ques);
+
 
         Bundle bundle = new Bundle();
         bundle.putString("bookdata", bookdata);
@@ -81,8 +90,6 @@ public class BBA_sem1_material extends Fragment {
         ppt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Bundle bundle1 = new Bundle();
-//                bundle1.putString("ppt", pptdata);
 
                 Demoppt demoppt = new Demoppt();
                 demoppt.setArguments(bundle);
@@ -97,9 +104,6 @@ public class BBA_sem1_material extends Fragment {
         note.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Bundle bundle2 = new Bundle();
-//                bundle2.putString("note", notedata);
-
                 Demonotes demonotes = new Demonotes();
                 demonotes.setArguments(bundle);
                 getParentFragmentManager().beginTransaction().replace(R.id.fragment_container, demonotes)
@@ -111,14 +115,20 @@ public class BBA_sem1_material extends Fragment {
         assignment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Bundle bundle3 = new Bundle();
-//                bundle3.putString("assignment", assignmentdata);
 
                 DemoAssignment demoAssignment = new DemoAssignment();
                 demoAssignment.setArguments(bundle);
                 getParentFragmentManager().beginTransaction().replace(R.id.fragment_container, demoAssignment)
                         .addToBackStack(null).commit();
                 dialog.dismiss();
+            }
+        });
+
+        question.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                    Uri uri = Uri.parse(QBank);
+                    startActivity(new Intent(Intent.ACTION_VIEW, uri));
             }
         });
 

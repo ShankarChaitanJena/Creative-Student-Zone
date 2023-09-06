@@ -2,8 +2,10 @@ package com.crtv.creativetechnocollege;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
@@ -36,33 +38,37 @@ public class BCA_sem5_material extends Fragment {
         sub1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showDialog(getActivity(), Demoppt.class, Demonotes.class, DemoAssignment.class, "Unix");
+                String QBank = "https://drive.google.com/drive/folders/1iqny8wccV7VRY8-xGR706Oh25XKoJpYT?usp=sharing";
+                showDialog(getActivity(), Demoppt.class, Demonotes.class, DemoAssignment.class, "Unix", QBank);
             }
         });
 
         sub2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showDialog(getActivity(), Demoppt.class, Demonotes.class, DemoAssignment.class, "Web Technology");
+                String QBank = "https://drive.google.com/drive/folders/1RF-gSgJMVe78PDSK06Luz4JeUwhIO7jE?usp=sharing";
+                showDialog(getActivity(), Demoppt.class, Demonotes.class, DemoAssignment.class, "Web Technology", QBank);
             }
         });
 
         sub3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showDialog(getActivity(), Demoppt.class, Demonotes.class, DemoAssignment.class, "Data Mining");
+                String QBank = "https://drive.google.com/drive/folders/1-S_zetsTly0SOG65XjwBT6-xJYYRKi9G?usp=sharing";
+                showDialog(getActivity(), Demoppt.class, Demonotes.class, DemoAssignment.class, "Data Mining", QBank);
             }
         });
 
         sub4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showDialog(getActivity(), Demoppt.class, Demonotes.class, DemoAssignment.class, "Software Engineering");
+                String QBank = "https://drive.google.com/drive/folders/1thcRHl9DdEVeOwLjWoz8E9pt54D97AJ-?usp=sharing";
+                showDialog(getActivity(), Demoppt.class, Demonotes.class, DemoAssignment.class, "Software Engineering", QBank);
             }
         });
         return  view;
     }
-    private void showDialog(Activity activity, Class next, Class next2, Class next3, String bookdata) {
+    private void showDialog(Activity activity, Class next, Class next2, Class next3, String bookdata, String QBank) {
 
         final Dialog dialog = new Dialog(activity);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -71,6 +77,8 @@ public class BCA_sem5_material extends Fragment {
         LinearLayout ppt = dialog.findViewById(R.id.ppt);
         LinearLayout note = dialog.findViewById(R.id.notes);
         LinearLayout assignment = dialog.findViewById(R.id.assign);
+        LinearLayout question = dialog.findViewById(R.id.ques);
+
 
         Bundle bundle = new Bundle();
         bundle.putString("bookdata", bookdata);
@@ -87,12 +95,9 @@ public class BCA_sem5_material extends Fragment {
             }
         });
 
-
-
         note.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Demonotes demonotes = new Demonotes();
                 demonotes.setArguments(bundle);
                 getParentFragmentManager().beginTransaction().replace(R.id.fragment_container, demonotes)
@@ -110,6 +115,14 @@ public class BCA_sem5_material extends Fragment {
                 getParentFragmentManager().beginTransaction().replace(R.id.fragment_container, demoAssignment)
                         .addToBackStack(null).commit();
                 dialog.dismiss();
+            }
+        });
+
+        question.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse(QBank);
+                startActivity(new Intent(Intent.ACTION_VIEW, uri));
             }
         });
 
