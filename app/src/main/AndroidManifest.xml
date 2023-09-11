@@ -23,9 +23,6 @@
         android:theme="@style/Theme.CreativeTechnoCollege"
         tools:targetApi="31">
         <activity
-            android:name="com.crtv.creativetechnocollege.MainActivity2"
-            android:exported="false" />
-        <activity
             android:name="com.crtv.creativetechnocollege.Splash"
             android:exported="true"
             android:screenOrientation="portrait">
